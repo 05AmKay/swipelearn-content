@@ -1,0 +1,18 @@
+{
+  "id": "devops.terraform.state",
+  "title": "State Is the Whole Game",
+  "label": "State",
+  "summary": "What state holds, remote backends, locking, drift, and moves.",
+  "cardCount": 3,
+  "estimatedMinutes": 14,
+  "icon": "layers",
+  "tint": "peach",
+  "level": "advanced",
+  "categoryId": "devops",
+  "subcategoryId": "devops.terraform",
+  "cardIds": [
+    "what-state-is",
+    "remote-backend",
+    "drift"
+  ]
+}

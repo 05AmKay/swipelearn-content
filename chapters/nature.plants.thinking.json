@@ -1,0 +1,19 @@
+{
+  "id": "nature.plants.thinking",
+  "title": "How Plants Think",
+  "label": "Plants",
+  "summary": "Explore the quiet intelligence of the botanical world.",
+  "cardCount": 4,
+  "estimatedMinutes": 6,
+  "icon": "git-branch",
+  "tint": "mint",
+  "level": "beginner",
+  "categoryId": "nature",
+  "subcategoryId": "nature.plants",
+  "cardIds": [
+    "sensing",
+    "light",
+    "water",
+    "roots"
+  ]
+}

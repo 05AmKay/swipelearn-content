@@ -1,0 +1,18 @@
+{
+  "id": "devops.docker.compose",
+  "title": "Docker Compose",
+  "label": "Compose",
+  "summary": "Defining multi-container services, dependencies, and overrides.",
+  "cardCount": 3,
+  "estimatedMinutes": 14,
+  "icon": "cube",
+  "tint": "peach",
+  "level": "intermediate",
+  "categoryId": "devops",
+  "subcategoryId": "devops.docker",
+  "cardIds": [
+    "one-file",
+    "depends-on",
+    "env"
+  ]
+}

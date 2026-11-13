@@ -1,0 +1,18 @@
+{
+  "id": "design.interiors.spaces",
+  "title": "Designing Better Spaces",
+  "label": "Spaces",
+  "summary": "The small decisions that make a room feel just right.",
+  "cardCount": 3,
+  "estimatedMinutes": 5,
+  "icon": "cube",
+  "tint": "lilac",
+  "level": "beginner",
+  "categoryId": "design",
+  "subcategoryId": "design.interiors",
+  "cardIds": [
+    "choices",
+    "movement",
+    "adapt"
+  ]
+}

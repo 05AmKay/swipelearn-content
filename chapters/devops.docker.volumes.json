@@ -1,0 +1,18 @@
+{
+  "id": "devops.docker.volumes",
+  "title": "Volumes and Networking",
+  "label": "Volumes",
+  "summary": "Bind mounts, named volumes, bridge networks, and publishing ports.",
+  "cardCount": 3,
+  "estimatedMinutes": 15,
+  "icon": "network",
+  "tint": "mintDeep",
+  "level": "intermediate",
+  "categoryId": "devops",
+  "subcategoryId": "devops.docker",
+  "cardIds": [
+    "why-volumes",
+    "networks",
+    "ports"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "devops.docker.containers",
+  "title": "Containers and Images",
+  "label": "Containers",
+  "summary": "What containers are, how layers cache, and why there is no container.",
+  "cardCount": 3,
+  "estimatedMinutes": 8,
+  "icon": "cube",
+  "tint": "indigo",
+  "level": "beginner",
+  "categoryId": "devops",
+  "subcategoryId": "devops.docker",
+  "cardIds": [
+    "image-vs-container",
+    "layers",
+    "namespaces"
+  ]
+}

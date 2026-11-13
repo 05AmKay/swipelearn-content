@@ -1,0 +1,18 @@
+{
+  "id": "devops.kubernetes.pods",
+  "title": "Pods and Containers",
+  "label": "Pods",
+  "summary": "The smallest thing Kubernetes will run, and why it exists.",
+  "cardCount": 3,
+  "estimatedMinutes": 10,
+  "icon": "network",
+  "tint": "lilac",
+  "level": "intermediate",
+  "categoryId": "devops",
+  "subcategoryId": "devops.kubernetes",
+  "cardIds": [
+    "what-is-a-pod",
+    "never-bare-pods",
+    "lifecycle"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "devops.cicd.pipelines",
+  "title": "Pipelines That Don't Flake",
+  "label": "Pipelines",
+  "summary": "Stage ordering, caching, flaky tests, and promoting one artifact.",
+  "cardCount": 3,
+  "estimatedMinutes": 11,
+  "icon": "sync",
+  "tint": "mintDeep",
+  "level": "intermediate",
+  "categoryId": "devops",
+  "subcategoryId": "devops.cicd",
+  "cardIds": [
+    "stages",
+    "flake",
+    "promotion"
+  ]
+}
