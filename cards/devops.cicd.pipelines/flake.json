@@ -1,0 +1,27 @@
+{
+  "id": "flake",
+  "kind": "subtopic",
+  "tag": "Practice",
+  "title": "A flaky test is a broken test",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Retries hide flakes and train the team to re-run instead of reading. Most intermittent failures come from a handful of causes worth hunting down properly."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Shared mutable state between tests, usually a database row or a module global",
+        "Real clocks and real sleeps instead of fake timers",
+        "Tests that depend on execution order",
+        "Unawaited promises that resolve into the next test"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Quarantine, don't retry",
+      "content": "Move a flaky test out of the blocking suite and open a ticket. Leaving it in with retries means the pipeline no longer tells you anything."
+    }
+  ]
+}
