@@ -1,0 +1,26 @@
+{
+  "id": "image-vs-container",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "An image is not a container",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "An image is a read-only stack of filesystem layers plus the metadata describing how to start it. A container is one running instance of that image with a thin writable layer on top."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "One image can back a hundred containers",
+        "Writes land in the container's own layer, not the image",
+        "Delete the container and those writes go with it"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "The mental model",
+      "content": "Image is to container what a class is to an instance, or a binary on disk is to a running process."
+    }
+  ]
+}

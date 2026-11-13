@@ -1,0 +1,25 @@
+{
+  "id": "namespaces",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "There is no container, only Linux",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "The kernel has no object called a container. What you get is a normal process with namespaces restricting what it can see and cgroups restricting what it can use."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Namespaces isolate the view: PIDs, mounts, network, hostname, users",
+        "cgroups cap consumption: CPU, memory, I/O",
+        "The container's PID 1 is just another process on the host"
+      ]
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "docker run --rm -d --name web nginx:1.27\n\n# Same process, seen from the host\nps -p $(docker inspect -f '{{.State.Pid}}' web)"
+    }
+  ]
+}
