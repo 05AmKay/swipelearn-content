@@ -1,0 +1,31 @@
+{
+  "id": "drift",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Drift, imports, and moves",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Someone will change something in the console. Terraform notices on the next refresh and proposes to undo it, which is correct but occasionally alarming."
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "terraform plan -refresh-only    # what drifted?\nterraform state list            # what do we track?"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Adopt an existing resource with an import block rather than recreating it",
+        "Rename or restructure with a moved block, so no destroy is planned",
+        "Never hand-edit the state file; use the state subcommands"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Read every destroy",
+      "content": "A rename without a moved block reads as destroy-then-create. On a database that is the difference between a no-op and an outage."
+    }
+  ]
+}
