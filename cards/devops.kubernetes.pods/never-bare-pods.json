@@ -1,0 +1,30 @@
+{
+  "id": "never-bare-pods",
+  "kind": "subtopic",
+  "tag": "Practice",
+  "title": "Don't create bare Pods",
+  "image": "https://picsum.photos/seed/swipelearn-k8s-controllers/900/1200",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "A Pod you create by hand is not managed by anything. If its node dies, the Pod dies with it and nothing brings it back."
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Use a controller",
+      "content": "Create a Deployment instead. It owns a ReplicaSet, which keeps the number of Pods you asked for alive across node failures and rollouts."
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "# Replaces a failed Pod automatically\nkubectl create deployment web --image=nginx:1.27\n\n# Scale it\nkubectl scale deployment/web --replicas=3"
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "When a bare Pod is fine",
+      "content": "Debugging. `kubectl run -it --rm debug --image=busybox` gives you a throwaway shell in the cluster, and you want it gone when you exit."
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "what-is-a-pod",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "What is a Pod?",
+  "image": "https://picsum.photos/seed/swipelearn-k8s-pod-basics/900/1200",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "A Pod is the smallest thing Kubernetes will schedule. You never hand it a bare container; you hand it a Pod, and the Pod holds one or more containers that always run together on the same machine."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Containers in a Pod share one network namespace",
+        "They can reach each other on localhost",
+        "They share the Pod's storage volumes",
+        "They live and die as a unit"
+      ]
+    },
+    {
+      "type": "code",
+      "language": "yaml",
+      "content": "apiVersion: v1\nkind: Pod\nmetadata:\n  name: web\nspec:\n  containers:\n    - name: nginx\n      image: nginx:1.27\n      ports:\n        - containerPort: 80",
+      "caption": "The smallest Pod worth writing down."
+    }
+  ]
+}
