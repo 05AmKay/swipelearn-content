@@ -1,0 +1,19 @@
+{
+  "id": "movement",
+  "kind": "subtopic",
+  "tag": "Subtopic",
+  "title": "Start with how people move",
+  "image": "lesson/architecture.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Watch where feet go. Clear paths keep a room calm, and a blocked doorway makes it feel smaller than it is."
+    },
+    {
+      "type": "image",
+      "image": "lesson/architecture.jpg",
+      "alt": "Exterior staircase guiding movement",
+      "inset": true
+    }
+  ]
+}

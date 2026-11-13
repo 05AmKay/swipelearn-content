@@ -1,0 +1,27 @@
+{
+  "id": "choices",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "A room is a set of choices",
+  "image": "lesson/interior.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Where you sit, what you see, and how sound travels are all decided long before anyone walks in."
+    },
+    {
+      "type": "image",
+      "image": "lesson/interior.jpg",
+      "alt": "People gathering in a spacious modern interior",
+      "caption": "Good spaces make gathering feel natural."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Paths before furniture",
+        "Light before decoration",
+        "People before objects"
+      ]
+    }
+  ]
+}
