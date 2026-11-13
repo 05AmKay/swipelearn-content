@@ -1,0 +1,26 @@
+{
+  "id": "light",
+  "kind": "subtopic",
+  "tag": "Subtopic",
+  "title": "Light is information",
+  "image": "lesson/plants-light.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Stems lean toward brightness and leaves turn to catch it. A plant reads the color of light to tell sun from shade."
+    },
+    {
+      "type": "image",
+      "image": "lesson/plants-light.jpg",
+      "alt": "Leaves lit by soft daylight",
+      "inset": true
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Stems bend toward the window",
+        "Pale, long stems ask for more light"
+      ]
+    }
+  ]
+}
