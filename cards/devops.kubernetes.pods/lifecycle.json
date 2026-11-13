@@ -1,0 +1,34 @@
+{
+  "id": "lifecycle",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Read the Pod lifecycle",
+  "image": "https://picsum.photos/seed/swipelearn-k8s-lifecycle/900/1200",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Most debugging starts with knowing which phase a Pod is stuck in. The phase tells you whose problem it is: the scheduler's, the image registry's, or your container's."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Pending: not placed on a node yet, usually resources or scheduling rules",
+        "Running: placed and at least one container is up",
+        "Succeeded: every container exited cleanly",
+        "Failed: a container exited non-zero and will not be retried",
+        "CrashLoopBackOff: it starts, dies, and Kubernetes is pausing before the next try"
+      ]
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "kubectl get pod web -o wide\nkubectl describe pod web      # events are at the bottom\nkubectl logs web --previous   # logs from the crashed attempt"
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Read events first",
+      "content": "The Events section of `kubectl describe` explains a Pending or CrashLoopBackOff Pod far more often than the container logs do."
+    }
+  ]
+}
