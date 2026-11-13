@@ -1,0 +1,23 @@
+{
+  "id": "anatomy",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "The shape of a good Dockerfile",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Pin the base image, install dependencies from a lockfile, copy source last, then declare how the thing starts. That ordering is what makes rebuilds fast."
+    },
+    {
+      "type": "code",
+      "language": "dockerfile",
+      "content": "FROM node:22-alpine\nWORKDIR /app\n\nCOPY package.json package-lock.json ./\nRUN npm ci --omit=dev\n\nCOPY . .\nEXPOSE 3000\nCMD [\"node\", \"server.js\"]"
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "CMD or ENTRYPOINT",
+      "content": "ENTRYPOINT sets the command that always runs; CMD sets arguments a caller can replace. If you want `docker run myapp --help` to work, the binary belongs in ENTRYPOINT."
+    }
+  ]
+}
