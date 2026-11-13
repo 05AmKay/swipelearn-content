@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "design",
+  "id": "design.architecture",
+  "title": "Architecture",
+  "label": "Architecture",
+  "summary": "Buildings tell you how to move through them.",
+  "coverImage": "lesson/architecture.jpg",
+  "icon": "layers",
+  "tint": "peach",
+  "level": "beginner",
+  "accent": "coral",
+  "chapterIds": [
+    "design.architecture.language"
+  ]
+}
