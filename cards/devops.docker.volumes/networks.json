@@ -1,0 +1,23 @@
+{
+  "id": "networks",
+  "kind": "subtopic",
+  "tag": "Mechanics",
+  "title": "Containers find each other by name",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "On a user-defined network, Docker runs a DNS resolver, so one container reaches another by its name. On the default bridge it cannot, which is why Compose creates a network for you."
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "docker network create app\ndocker run -d --net app --name db postgres:17\ndocker run -d --net app --name api myapi\n\n# Inside api, the database is simply: db:5432"
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "localhost means the container",
+      "content": "Inside a container, localhost is that container, not your machine and not the database. Use the service name, or host.docker.internal to reach the host."
+    }
+  ]
+}
