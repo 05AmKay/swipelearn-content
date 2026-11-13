@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "devops",
+  "id": "devops.docker",
+  "title": "Docker",
+  "label": "Docker",
+  "summary": "Containers, images, volumes & compose",
+  "coverImage": "https://picsum.photos/seed/swipelearn-docker/1200/800",
+  "icon": "cube",
+  "tint": "indigo",
+  "level": "beginner",
+  "accent": "blue",
+  "chapterIds": [
+    "devops.docker.containers",
+    "devops.docker.dockerfile",
+    "devops.docker.volumes",
+    "devops.docker.compose"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "nature",
+  "id": "nature.plants",
+  "title": "Plants",
+  "label": "Plants",
+  "summary": "Explore the quiet intelligence of the botanical world.",
+  "coverImage": "lesson/botanical.jpg",
+  "icon": "git-branch",
+  "tint": "mint",
+  "level": "beginner",
+  "accent": "green",
+  "chapterIds": [
+    "nature.plants.thinking"
+  ]
+}

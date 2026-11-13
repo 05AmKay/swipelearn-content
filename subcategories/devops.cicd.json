@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "devops",
+  "id": "devops.cicd",
+  "title": "CI/CD",
+  "label": "CI/CD",
+  "summary": "GitHub Actions, GitLab, pipelines",
+  "coverImage": "https://picsum.photos/seed/swipelearn-cicd/1200/800",
+  "icon": "sync",
+  "tint": "mintDeep",
+  "level": "intermediate",
+  "accent": "green",
+  "chapterIds": [
+    "devops.cicd.pipelines"
+  ]
+}

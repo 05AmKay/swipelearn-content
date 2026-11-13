@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "devops",
+  "id": "devops.kubernetes",
+  "title": "Kubernetes",
+  "label": "Kubernetes",
+  "summary": "Pods, deployments, services & helm",
+  "coverImage": "https://picsum.photos/seed/swipelearn-kubernetes/1200/800",
+  "icon": "network",
+  "tint": "lilac",
+  "level": "intermediate",
+  "accent": "blue",
+  "chapterIds": [
+    "devops.kubernetes.pods"
+  ]
+}

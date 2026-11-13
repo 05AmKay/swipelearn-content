@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "design",
+  "id": "design.interiors",
+  "title": "Interiors",
+  "label": "Interiors",
+  "summary": "The small decisions that make a room feel just right.",
+  "coverImage": "lesson/interior.jpg",
+  "icon": "cube",
+  "tint": "lilac",
+  "level": "beginner",
+  "accent": "blue",
+  "chapterIds": [
+    "design.interiors.spaces"
+  ]
+}

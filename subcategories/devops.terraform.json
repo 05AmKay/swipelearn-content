@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "categoryId": "devops",
+  "id": "devops.terraform",
+  "title": "Terraform",
+  "label": "Terraform",
+  "summary": "HCL, modules, state management",
+  "coverImage": "https://picsum.photos/seed/swipelearn-terraform/1200/800",
+  "icon": "layers",
+  "tint": "peach",
+  "level": "advanced",
+  "accent": "coral",
+  "chapterIds": [
+    "devops.terraform.state"
+  ]
+}
