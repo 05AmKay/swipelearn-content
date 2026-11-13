@@ -1,0 +1,26 @@
+{
+  "id": "light",
+  "kind": "subtopic",
+  "tag": "Design principle",
+  "title": "Light is an invisible material",
+  "image": "lesson/interior.jpg",
+  "blocks": [
+    {
+      "type": "image",
+      "image": "lesson/interior.jpg",
+      "alt": "Bright spacious architectural interior"
+    },
+    {
+      "type": "text",
+      "content": "Architects shape light just as carefully as concrete or timber. It guides attention and changes mood."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Direction determines softness",
+        "Openings frame a point of view",
+        "Shadow adds depth and time"
+      ]
+    }
+  ]
+}

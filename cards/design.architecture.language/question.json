@@ -1,0 +1,38 @@
+{
+  "id": "question",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "Every building starts with a question",
+  "image": "lesson/architecture.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Architecture is more than shelter. It is a response to place, people, climate, and the way we want to live."
+    },
+    {
+      "type": "image",
+      "image": "lesson/architecture.jpg",
+      "alt": "Concrete building and exterior staircase",
+      "caption": "A structure can reveal how people move before you ever step inside."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Form follows human needs",
+        "Context shapes every decision",
+        "Materials carry meaning"
+      ]
+    },
+    {
+      "type": "text",
+      "content": "Look again at the edges, openings, and stairs. Each one is an invitation, or a boundary, created by the designer."
+    },
+    {
+      "type": "image",
+      "image": "lesson/geometry.jpg",
+      "alt": "Geometric building against a clear sky",
+      "caption": "Geometry gives the eye a path to follow.",
+      "inset": true
+    }
+  ]
+}

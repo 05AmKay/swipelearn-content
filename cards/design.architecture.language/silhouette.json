@@ -1,0 +1,36 @@
+{
+  "id": "silhouette",
+  "kind": "subtopic",
+  "tag": "Subtopic",
+  "title": "Learn to read the silhouette",
+  "image": "lesson/geometry.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Before details come into view, a building speaks through its outline, scale, and relationship to the sky."
+    },
+    {
+      "type": "gallery",
+      "images": [
+        {
+          "image": "lesson/geometry.jpg",
+          "alt": "Geometric building against a clear sky",
+          "caption": "Hard edges"
+        },
+        {
+          "image": "lesson/botanical.jpg",
+          "alt": "Plant-covered modern building",
+          "caption": "Soft edges"
+        }
+      ]
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Notice the dominant geometry",
+        "Compare height to its neighbors",
+        "Look for rhythm and repetition"
+      ]
+    }
+  ]
+}
