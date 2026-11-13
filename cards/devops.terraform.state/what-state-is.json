@@ -1,0 +1,26 @@
+{
+  "id": "what-state-is",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "What the state file actually holds",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "State is Terraform's map from the resources in your configuration to the real objects in your provider, along with their last-known attributes. Without it, Terraform has no idea that the server in your plan is the server already running."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Config says what you want, state records what exists",
+        "A plan is the diff between the two, refreshed against the provider",
+        "Lose the state and Terraform will try to create everything again"
+      ]
+    },
+    {
+      "type": "callout",
+      "variant": "danger",
+      "title": "State is sensitive",
+      "content": "Attributes are stored in plain text, including some secrets. A state file in git is a credential leak, which is why the backend belongs in remote storage with encryption and tight access."
+    }
+  ]
+}

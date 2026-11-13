@@ -1,0 +1,23 @@
+{
+  "id": "remote-backend",
+  "kind": "subtopic",
+  "tag": "Practice",
+  "title": "Remote state and locking",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Local state breaks the moment a second person or a CI runner applies. A remote backend gives you one shared copy plus a lock so two applies cannot interleave."
+    },
+    {
+      "type": "code",
+      "language": "hcl",
+      "content": "terraform {\n  backend \"s3\" {\n    bucket       = \"acme-tfstate\"\n    key          = \"prod/network.tfstate\"\n    region       = \"ap-south-1\"\n    encrypt      = true\n    use_lockfile = true\n  }\n}"
+    },
+    {
+      "type": "callout",
+      "variant": "note",
+      "title": "Split state by blast radius",
+      "content": "One state file for the whole estate means every apply risks everything. Separate by lifecycle and ownership: networking, data stores, and applications each with their own."
+    }
+  ]
+}
