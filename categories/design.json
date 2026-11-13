@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "id": "design",
+  "title": "Design",
+  "label": "Design",
+  "kicker": "Track",
+  "summary": "Read the built world and shape it with intent.",
+  "coverImage": "lesson/architecture.jpg",
+  "icon": "book",
+  "tint": "peach",
+  "accent": "coral",
+  "subcategoryIds": [
+    "design.architecture",
+    "design.interiors"
+  ]
+}

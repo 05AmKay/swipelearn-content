@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "id": "nature",
+  "title": "Nature",
+  "label": "Nature",
+  "kicker": "Track",
+  "summary": "The quiet systems running underneath everything.",
+  "coverImage": "lesson/botanical.jpg",
+  "icon": "git-branch",
+  "tint": "mint",
+  "accent": "green",
+  "subcategoryIds": [
+    "nature.plants"
+  ]
+}
