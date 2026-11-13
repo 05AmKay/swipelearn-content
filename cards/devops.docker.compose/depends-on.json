@@ -1,0 +1,26 @@
+{
+  "id": "depends-on",
+  "kind": "subtopic",
+  "tag": "Practice",
+  "title": "depends_on does not wait for ready",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "By default depends_on only orders container starts. A database process accepting connections takes longer than its container taking off, so the API can still come up first and fail."
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Pair it with a healthcheck",
+      "content": "Add condition: service_healthy and give the dependency a healthcheck. Then Compose waits for ready rather than merely started."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Your app should retry its first connection regardless",
+        "A container that exits on a transient failure will be restarted anyway",
+        "Never rely on a fixed sleep to order startup"
+      ]
+    }
+  ]
+}

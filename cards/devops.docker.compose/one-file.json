@@ -1,0 +1,17 @@
+{
+  "id": "one-file",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "One file for the whole stack",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Compose describes every service, network, and volume your app needs in a single file, so starting the stack is one command instead of a page of notes."
+    },
+    {
+      "type": "code",
+      "language": "yaml",
+      "content": "services:\n  api:\n    build: .\n    ports: ['3000:3000']\n    environment:\n      DATABASE_URL: postgres://app@db:5432/app\n    depends_on:\n      db:\n        condition: service_healthy\n\n  db:\n    image: postgres:17\n    volumes: ['pgdata:/var/lib/postgresql/data']\n    healthcheck:\n      test: ['CMD-SHELL', 'pg_isready -U app']\n      interval: 5s\n\nvolumes:\n  pgdata:"
+    }
+  ]
+}
