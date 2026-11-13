@@ -1,0 +1,19 @@
+{
+  "id": "design.architecture.language",
+  "title": "The Language of Architecture",
+  "label": "Architecture",
+  "summary": "Read the stories hidden in the buildings around you.",
+  "cardCount": 4,
+  "estimatedMinutes": 6,
+  "icon": "layers",
+  "tint": "peach",
+  "level": "beginner",
+  "categoryId": "design",
+  "subcategoryId": "design.architecture",
+  "cardIds": [
+    "question",
+    "silhouette",
+    "light",
+    "life"
+  ]
+}
