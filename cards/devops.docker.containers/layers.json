@@ -1,0 +1,23 @@
+{
+  "id": "layers",
+  "kind": "subtopic",
+  "tag": "Mechanics",
+  "title": "Layers and the build cache",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Each instruction in a Dockerfile produces a layer. Docker reuses a cached layer when the instruction and all its inputs are unchanged, and once one layer misses, every layer after it rebuilds."
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "docker image history nginx:1.27\ndocker build --progress=plain .   # shows CACHED per step"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Order matters more than you think",
+      "content": "Copy your lockfile and install dependencies before copying source. Source changes every commit; dependencies rarely do, so this one ordering decision is usually the difference between a 4-second and a 4-minute build."
+    }
+  ]
+}
