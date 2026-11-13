@@ -1,0 +1,25 @@
+{
+  "id": "water",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Water moves with purpose",
+  "image": "lesson/plants-water.jpg",
+  "blocks": [
+    {
+      "type": "image",
+      "image": "lesson/plants-water.jpg",
+      "alt": "Water droplets on green leaves"
+    },
+    {
+      "type": "text",
+      "content": "Water climbs from the roots to the leaves and leaves through tiny pores. On hot days, a plant can close them to save what it has."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Droopy leaves can mean thirst",
+        "Soggy soil can mean too much"
+      ]
+    }
+  ]
+}

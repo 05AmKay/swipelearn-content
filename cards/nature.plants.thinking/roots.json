@@ -1,0 +1,28 @@
+{
+  "id": "roots",
+  "kind": "subtopic",
+  "tag": "Design principle",
+  "title": "Roots read the soil",
+  "image": "lesson/plants-soil-scoop.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Underground, roots follow moisture and nutrients and steer around obstacles. Loose soil lets them explore."
+    },
+    {
+      "type": "gallery",
+      "images": [
+        {
+          "image": "lesson/plants-soil-scoop.jpg",
+          "alt": "Scoop of dark potting soil",
+          "caption": "Loose mix"
+        },
+        {
+          "image": "lesson/plants-roots.jpg",
+          "alt": "Young plant with soil around its roots",
+          "caption": "Room to grow"
+        }
+      ]
+    }
+  ]
+}

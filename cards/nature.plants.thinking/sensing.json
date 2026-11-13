@@ -1,0 +1,27 @@
+{
+  "id": "sensing",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "Plants are always sensing",
+  "image": "lesson/plants-window.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "A plant cannot walk away from trouble, so it pays close attention instead. Light, water, touch, and gravity all shape how it grows."
+    },
+    {
+      "type": "image",
+      "image": "lesson/plants-window.jpg",
+      "alt": "Potted plants on a bright windowsill",
+      "caption": "Even a windowsill is full of signals."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Growth is a slow kind of movement",
+        "Every leaf is a sensor",
+        "Roots keep searching all day"
+      ]
+    }
+  ]
+}
