@@ -1,0 +1,28 @@
+{
+  "id": "hygiene",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Four habits worth keeping",
+  "blocks": [
+    {
+      "type": "bullets",
+      "items": [
+        "Add a .dockerignore, or you ship .git and node_modules into the build context",
+        "Pin tags, and prefer a digest when you need reproducibility",
+        "Run as a non-root user",
+        "Keep one concern per image rather than a process supervisor inside it"
+      ]
+    },
+    {
+      "type": "code",
+      "language": "dockerfile",
+      "content": "RUN addgroup -S app && adduser -S app -G app\nUSER app"
+    },
+    {
+      "type": "callout",
+      "variant": "danger",
+      "title": "Secrets do not belong in layers",
+      "content": "An ARG or a copied .env stays in the image history forever, even if a later instruction deletes the file. Use build secrets or inject at runtime."
+    }
+  ]
+}

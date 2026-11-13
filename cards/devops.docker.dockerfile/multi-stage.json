@@ -1,0 +1,25 @@
+{
+  "id": "multi-stage",
+  "kind": "subtopic",
+  "tag": "Practice",
+  "title": "Multi-stage builds",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Compilers, headers, and dev dependencies are needed to build and useless at runtime. A second stage copies out only the artifact and leaves the toolchain behind."
+    },
+    {
+      "type": "code",
+      "language": "dockerfile",
+      "content": "FROM golang:1.25 AS build\nWORKDIR /src\nCOPY . .\nRUN CGO_ENABLED=0 go build -o /bin/api ./cmd/api\n\nFROM gcr.io/distroless/static\nCOPY --from=build /bin/api /api\nENTRYPOINT [\"/api\"]"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Smaller images pull faster and start faster",
+        "No shell and no package manager means a far smaller attack surface",
+        "Build tools never reach production"
+      ]
+    }
+  ]
+}
