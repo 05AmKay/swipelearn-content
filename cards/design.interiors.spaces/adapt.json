@@ -1,0 +1,28 @@
+{
+  "id": "adapt",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Leave room to adapt",
+  "image": "lesson/geometry.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "The best rooms change with the people in them. Leave a little open space and let use fill it in."
+    },
+    {
+      "type": "gallery",
+      "images": [
+        {
+          "image": "lesson/geometry.jpg",
+          "alt": "Clean geometric facade",
+          "caption": "Structure"
+        },
+        {
+          "image": "lesson/botanical.jpg",
+          "alt": "Greenery on a facade",
+          "caption": "Growth"
+        }
+      ]
+    }
+  ]
+}
