@@ -1,0 +1,23 @@
+{
+  "id": "stages",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "Fail fast, then fail slow",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Order your stages by how quickly they can tell you something is wrong. Lint and typecheck in seconds, unit tests in a minute, integration and end-to-end last."
+    },
+    {
+      "type": "code",
+      "language": "yaml",
+      "content": "jobs:\n  check:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v5\n      - uses: actions/setup-node@v5\n        with:\n          node-version: 22\n          cache: npm\n      - run: npm ci\n      - run: npm run lint\n      - run: npx tsc --noEmit\n      - run: npm test -- --run"
+    },
+    {
+      "type": "callout",
+      "variant": "tip",
+      "title": "Cache the right thing",
+      "content": "Cache the dependency store keyed on the lockfile hash, never node_modules itself. A stale module tree produces failures that reproduce nowhere else."
+    }
+  ]
+}

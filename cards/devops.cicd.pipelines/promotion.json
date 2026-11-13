@@ -1,0 +1,25 @@
+{
+  "id": "promotion",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Build once, promote the artifact",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Rebuilding per environment means staging and production run different bytes. Build one artifact, tag it, and promote that same digest through each environment."
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "# Build once, identify by digest\ndocker buildx build -t registry/app:$GIT_SHA --push .\n\n# Promote the identical image\ndocker buildx imagetools create \\\n  -t registry/app:production registry/app:$GIT_SHA"
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Configuration comes from the environment, not the build",
+        "A rollback is re-pointing a tag at a known-good digest",
+        "The thing you tested is the thing you shipped"
+      ]
+    }
+  ]
+}
