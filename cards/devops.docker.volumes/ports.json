@@ -1,0 +1,23 @@
+{
+  "id": "ports",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Publishing versus exposing",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "EXPOSE in a Dockerfile is documentation and nothing more. Only -p actually forwards a host port to the container, and that is what makes a service reachable from outside."
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "docker run -p 8080:80 nginx:1.27   # host 8080 -> container 80\ndocker run -p 127.0.0.1:8080:80 nginx:1.27   # loopback only"
+    },
+    {
+      "type": "callout",
+      "variant": "danger",
+      "title": "Binding to 0.0.0.0 is public",
+      "content": "A plain -p 5432:5432 on a cloud host can expose your database to the internet, and on many setups it punches straight through the firewall. Bind to 127.0.0.1 unless you mean otherwise."
+    }
+  ]
+}

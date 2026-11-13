@@ -1,0 +1,31 @@
+{
+  "id": "why-volumes",
+  "kind": "intro",
+  "tag": "Foundation",
+  "title": "The container filesystem is temporary",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "Everything a container writes lands in its own thin layer, and that layer is deleted with the container. Anything you intend to keep has to live outside it."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Named volumes: Docker manages the storage, best for databases",
+        "Bind mounts: a host path straight into the container, best for local development",
+        "tmpfs: memory only, never touches disk"
+      ]
+    },
+    {
+      "type": "code",
+      "language": "bash",
+      "content": "# Named volume, managed by Docker\ndocker run -v pgdata:/var/lib/postgresql/data postgres:17\n\n# Bind mount, your working copy live in the container\ndocker run -v \"$PWD\":/app node:22-alpine"
+    },
+    {
+      "type": "callout",
+      "variant": "warning",
+      "title": "Bind mounts shadow the image",
+      "content": "Mounting over /app hides whatever the image put there, including an installed node_modules. That is the usual cause of \"it works in the image but not when I mount\"."
+    }
+  ]
+}
