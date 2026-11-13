@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "2026.10.31-2",
+  "id": "devops",
+  "title": "DevOps Engineering",
+  "label": "DevOps",
+  "kicker": "Career path",
+  "certified": true,
+  "summary": "Master containerization, orchestration, automation pipelines, and infrastructure as code.",
+  "coverImage": "https://picsum.photos/seed/swipelearn-devops/1200/800",
+  "icon": "sync",
+  "tint": "indigo",
+  "accent": "blue",
+  "subcategoryIds": [
+    "devops.docker",
+    "devops.kubernetes",
+    "devops.cicd",
+    "devops.terraform"
+  ]
+}
