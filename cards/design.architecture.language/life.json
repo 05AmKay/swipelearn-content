@@ -1,0 +1,27 @@
+{
+  "id": "life",
+  "kind": "subtopic",
+  "tag": "Field note",
+  "title": "Good design leaves room for life",
+  "image": "lesson/botanical.jpg",
+  "blocks": [
+    {
+      "type": "text",
+      "content": "The most memorable spaces are not frozen compositions. They adapt, weather, and become personal."
+    },
+    {
+      "type": "image",
+      "image": "lesson/botanical.jpg",
+      "alt": "Greenery growing across a modern facade",
+      "caption": "Nature and time become co-authors of a place."
+    },
+    {
+      "type": "bullets",
+      "items": [
+        "Observe how people improvise",
+        "Notice where activity gathers",
+        "Look for traces of change"
+      ]
+    }
+  ]
+}
